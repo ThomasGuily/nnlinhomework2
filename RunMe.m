@@ -18,5 +18,5 @@ fopt = 0.5*xopt'*Q*xopt-c'*xopt+p
 %Graphes des erreurs
 semilogy(1:maxiter,abs(e-fopt),'y'); hold on;%jauneconverge lentement 
 semilogy(1:maxiter,abs(e_0-fopt),'b'); hold on;%bleu converge assez vite
-semilogy(1:maxiter,abs(e_1-fopt),'g'); hold on;%
-semilogy(1:maxiter,abs(e_2-fopt),'r'); hold on;
+semilogy(1:maxiter,abs(e_1-fopt),'g'); hold on;%vert converge plus vite que bleu
+semilogy(1:maxiter,abs(e_2-fopt),'r'); hold on;%bleu converge très rapidement
